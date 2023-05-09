@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://github.com/cassiamoraes/Advice-Generator-App)
 - Live Site URL: [Add live site URL here](https://cassiamoraes.github.io/Advice-Generator-App/)
 
 ## My process
