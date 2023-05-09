@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+@mixin theme($theme: AlingItems){
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+}
+
+body{
+    @include theme($theme: AlingItems);
+    font-family: 'Manrope', sans-serif;
+    min-height: 100vh;
+    font-weight: bold;
+    background-color: hsl(218, 23%, 16%);
+}
+
+.attribution{
+    display: none;
+}
+
+.container{
+    margin: auto;
+    width: 33rem;
+    //max-height: 30rem;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 1.5rem;
+
+    #text{
+        width: 25rem;
+        color:hsl(193, 38%, 86%);
+        //height: 8rem;
+        padding: 0.5rem;
+        font-size: 28px;
+    }
+
+    .divider img{
+        margin-bottom: 2rem;
+        filter: invert(15%);
+    }
+
+    button{
+        background-color: hsl(150, 100%, 66%);
+        border: none;
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 3rem;
+        cursor: pointer;
+
+        @include theme($theme: AlingItems);
+        margin-bottom: -1.5rem;
+        
+    }
+
+    .btn :hover{
+        box-shadow: 0px 0px 20px hsl(150, 100%, 66%);
+    }
+}
+
+.id{
+    padding-top: 2rem;
+    text-transform: uppercase;
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 2px;
+}
+
+@media all and (max-width: 600px) {
+    .container{
+        width: 28rem;
+    }
+
+    .divider img{
+        max-width: 25rem;
+    }
+}
